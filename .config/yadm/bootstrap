@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# make zsh the default shell
+chsh -s $(which zsh)
+
 # load dconf settings
 dconf load / < ~/.config/dconf/settings.ini
 
