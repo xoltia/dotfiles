@@ -1,0 +1,3 @@
+[submodule ".config/yadm/firefox-gnome-theme"]
+	path = .config/yadm/firefox-gnome-theme
+	url = https://github.com/rafaelmardojai/firefox-gnome-theme

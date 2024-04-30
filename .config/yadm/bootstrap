@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# load dconf settings
+dconf load / < ~/.config/dconf/settings.ini
+
+# install firefox theme
+cd firefox-gnome-theme
+./scripts/auto-install.sh
