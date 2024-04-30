@@ -1,3 +1,0 @@
-com.visualstudio.code
-dev.vencord.Vesktop
-com.spotify.Client
