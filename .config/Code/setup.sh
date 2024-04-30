@@ -1,1 +1,1 @@
-cat ./extensions.txt | xargs -L 1 code --install-extension
+cat ./extensions.txt | xargs -rL 1 code --install-extension
