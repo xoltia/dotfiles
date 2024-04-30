@@ -1,0 +1,10 @@
+gnome-shell-extension-blur-my-shell
+ibus-mozc
+gnome-console
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+fastfetch
+eza
+google-noto-sans-fonts
+google-noto-sans-cjk-fonts
