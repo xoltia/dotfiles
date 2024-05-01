@@ -1,3 +1,14 @@
 {
-    "workbench.colorTheme": "Default Dark Modern"
+    "workbench.iconTheme": "material-icon-theme",
+    "window.titleBarStyle": "custom",
+    "[go]": {
+        "editor.semanticHighlighting.enabled": true,
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "workbench.colorTheme": "Adwaita Dark",
+    "editor.fontFamily": "'MesloLGMDZ Nerd Font Mono'"
 }

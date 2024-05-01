@@ -3,3 +3,5 @@ ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode.cpptools
+piousdeer.adwaita-theme
+pkief.material-icon-theme
