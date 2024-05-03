@@ -1,5 +1,30 @@
 #!/bin/bash
 
+
+# check if dnf is available, otherwise ask if packages were manually installed
+if command -v dnf &> /dev/null; then
+    sudo dnf update -y
+
+    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
+    dnf check-update
+
+    sudo dnf install -y $(cat ~/.config/yadm/dnf-packages)
+else
+    echo "dnf not found, manually install the following package equivalents:"
+    cat ~/.config/yadm/dnf-packages
+    read -p "Press enter to continue"
+fi
+
+# check if flatpak is available, otherwise warn the user
+if command -v flatpak &> /dev/null; then
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    flatpak install $(cat ~/.config/yadm/flatpak-packages)
+else
+    echo "flatpak not found, exiting"
+    exit 1
+fi
+
 # make zsh the default shell
 chsh -s $(which zsh)
 
