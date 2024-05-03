@@ -7,8 +7,9 @@ chsh -s $(which zsh)
 dconf load / < ~/.config/dconf/settings.ini
 
 # install firefox theme
-cd firefox-gnome-theme
+cd ~/.config/yadm/firefox-gnome-theme
 ./scripts/auto-install.sh
 
 # install vscode extensions
-~/.config/Code/setup.sh
+cd ~/.config/Code/
+./setup.sh
