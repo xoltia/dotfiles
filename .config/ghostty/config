@@ -1,0 +1,9 @@
+window-height = 30
+window-width = 120
+gtk-titlebar-hide-when-maximized = true
+window-padding-x = 15
+window-padding-y = 10
+background-opacity = 0.95
+
+# theme = Adwaita Dark
+# font-family = "BIZ UDGothic"
