@@ -26,6 +26,6 @@ alias ta="tmux attach"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-wal -b '#1d1d1d' -neqi $(gsettings get org.gnome.desktop.background picture-uri | cut -c 9- | rev | cut -c 2- | rev)
+# wal -b '#1d1d1d' -neqi $(gsettings get org.gnome.desktop.background picture-uri | cut -c 9- | rev | cut -c 2- | rev)
 fastfetch -c paleofetch
 
