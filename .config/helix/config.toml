@@ -1,4 +1,5 @@
-theme = "base16_transparent"
+theme = "adwaita-dark-transparent"
 
 [editor]
 line-number = "relative"
+bufferline = "multiple"
