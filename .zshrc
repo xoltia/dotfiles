@@ -16,9 +16,14 @@ bindkey "^[[1;5D" backward-word
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd j)"
+# eval "$(starship init zsh)"
+source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 alias ta="tmux attach"
 alias tw="~/.scripts/tmux-project-workspace.sh"
+alias ls="eza --icons"
+alias ll="eza --icons --no-user --long --git --time-style=long-iso"
+
 # bun completions
 [ -s "/home/luisl/.bun/_bun" ] && source "/home/luisl/.bun/_bun"
 
