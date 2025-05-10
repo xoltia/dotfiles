@@ -1,6 +1,6 @@
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=500000
+SAVEHIST=500000
 bindkey -e
 zstyle :compinstall filename '/home/luisl/.zshrc'
 
