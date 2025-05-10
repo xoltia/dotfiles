@@ -18,7 +18,7 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd j)"
 
 alias ta="tmux attach"
-
+alias tw="~/.scripts/tmux-project-workspace.sh"
 # bun completions
 [ -s "/home/luisl/.bun/_bun" ] && source "/home/luisl/.bun/_bun"
 
