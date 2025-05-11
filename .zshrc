@@ -1,7 +1,8 @@
 HISTFILE=~/.histfile
 HISTSIZE=500000
 SAVEHIST=500000
-bindkey -e
+HISTCONTROL=ignoreboth:erasedups
+
 zstyle :compinstall filename '/home/luisl/.zshrc'
 
 autoload -Uz compinit
@@ -11,11 +12,13 @@ autoload -Uz promptinit
 promptinit
 prompt adam1
 
+# bindkey -e
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh --cmd j)"
+# source ~/.zsh-plugins/zsh-helix-mode/zsh-helix-mode.plugin.zsh
 # eval "$(starship init zsh)"
 source "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
@@ -24,10 +27,9 @@ alias tw="~/.scripts/tmux-project-workspace.sh"
 alias ls="eza --icons"
 alias ll="eza --icons --no-user --long --git --time-style=long-iso"
 
-# bun completions
-[ -s "/home/luisl/.bun/_bun" ] && source "/home/luisl/.bun/_bun"
+export EDITOR="hx"
 
-# bun
+[ -s "/home/luisl/.bun/_bun" ] && source "/home/luisl/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
