@@ -1,0 +1,23 @@
+# GitHub dark with transparent background and
+# a more neutral dark background for menus
+inherits = "github_dark"
+
+"ui.background" = {}
+
+"ui.statusline" = { fg = "fg.muted", bg = "libadwaita_dark_alt" }
+"ui.statusline.active" = { fg = "fg.default", underline = { color = "scale.coral.3", style = "line" } }
+"ui.popup" = { bg = "libadwaita_popup" }
+"ui.popup.info" = { fg = "fg.default", bg = "libadwaita_popup" }
+"ui.help" = { fg = "fg.default", bg = "libadwatia_dark_alt" }
+
+"ui.bufferline" = { fg = "fg.muted", bg = "libadwaita_dark" }
+"ui.bufferline.active" = { fg = "fg.muted", bg = "libadwaita_dark_alt", underline = { color = "scale.coral.3", style = "line" } }
+
+"ui.menu" = { fg = "fg.default" }
+"ui.menu.selected" = { bg = "scale.gray.4" }
+"ui.menu.scroll" = { fg = "scale.gray.5" }
+
+[palette]
+libadwaita_dark = "#1D1D1D"
+libadwaita_dark_alt = "#303030"
+libadwaita_popup = "#282828"

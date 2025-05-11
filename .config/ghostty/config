@@ -1,7 +1,8 @@
 window-height = 30
 window-width = 120
 gtk-titlebar-hide-when-maximized = true
-window-padding-x = 15
-window-padding-y = 10
+# window-padding-x = 15
+# window-padding-y = 10
+window-padding-balance = true
 background-opacity = 0.95
 theme = Adwaita Dark
