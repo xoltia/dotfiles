@@ -27,6 +27,8 @@ alias tw="~/.scripts/tmux-project-workspace.sh"
 alias ls="eza --icons"
 alias ll="eza --icons --no-user --long --git --time-style=long-iso"
 
+export PATH="/opt/yazi:$PATH"
+
 export EDITOR="hx"
 
 [ -s "/home/luisl/.bun/_bun" ] && source "/home/luisl/.bun/_bun"
